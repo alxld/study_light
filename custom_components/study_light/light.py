@@ -38,7 +38,8 @@ class StudyLight(NewLight):
             "Study", domain=DOMAIN, debug=False, debug_rl=False
         )
 
-        self.entities[ceiling_entity] = None
         self.entities[lamps_entity] = None
+        self.entities[ceiling_entity] = None
         self.entities_below_threshold = [lamps_entity]
+        self.entities_above_threshold = [ceiling_entity]
         self.switch = switch_name
