@@ -43,3 +43,4 @@ class StudyLight(NewLight):
         self.entities_below_threshold = [lamps_entity]
         self.entities_above_threshold = [ceiling_entity]
         self.switch = switch_name
+        self.has_brightness_threshold = True
